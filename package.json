@@ -1,0 +1,22 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VikaZorenko/node-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VikaZorenko/node-proxy/issues"
+  },
+  "homepage": "https://github.com/VikaZorenko/node-proxy#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
