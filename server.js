@@ -1,9 +1,9 @@
 const http = require('http');
 
+// Collects request body and sends info about it
+
 const server = http.createServer((req, res) => {
-  console.log(req.method);
   collectRequestData(req, result => {
-    console.log(result);
     res.end(`Parsed data ${JSON.stringify(result)}`);
   });
 });
@@ -15,7 +15,6 @@ function collectRequestData(request, callback) {
     data.push(chunk);
   })
   request.on('end', () => {
-    console.log(data)
     callback(JSON.parse(data));
   });
 }
